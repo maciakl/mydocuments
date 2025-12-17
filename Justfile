@@ -6,3 +6,6 @@ build:
 
 release: build
     zip -j "dist/mydocuments-{{VER}}-win_x64.zip" dist/mydocuments.exe
+
+hash: release
+    sha256sum dist/mydocuments-{{VER}}-win_x64.zip > dist/mydocuments-{{VER}}-win_x64.zip.sha256
