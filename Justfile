@@ -18,3 +18,7 @@ release: hash
     git tag -a "v{{VER}}" -m "Release v{{VER}}"
     git push origin "v{{VER}}"
     gh release create "v{{VER}}" dist/mydocuments-{{VER}}-win_x64.zip dist/mydocuments-{{VER}}.tar.gz dist/checksums-{{VER}}.txt --title "v{{VER}}" --generate-notes
+
+bump part:
+    bmp.py mydocuments.py {{part}}
+    bmp.py pyproject.toml {{part}}
