@@ -1,6 +1,6 @@
 [project]
 name = "mydocuments"
-version = "0.1.1"
+version = "0.1.2"
 description = "Displays the path to the user's documents directory."
 readme = "README.md"
 requires-python = ">=3.11"
