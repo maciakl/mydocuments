@@ -45,6 +45,16 @@ On other platforms it will default to the fuzzy finder, for obvious reasons.
 
 ## Installation
 
+### Any Platform
+
+You can install using `uv` (see [uv.rs](https://uv.rs)).
+
+    uv tool install mydocuments
+
+You can also run it without installing:
+
+    uv tool run mydocuments
+
 ### Windows
 
 On Windows, this tool is distributed via `scoop` 

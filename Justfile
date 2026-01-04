@@ -22,5 +22,5 @@ release: hash
     gh release create "v{{VER}}" dist/{{PROJ}}-{{VER}}-win_x64.zip dist/{{PROJ}}-{{VER}}.tar.gz dist/{{PROJ}}-{{VER}}-py3-none-any.whl dist/checksums-{{VER}}.txt --title "v{{VER}}" --generate-notes
 
 bump part:
-    bmp.py {{PROJ}}.py {{part}}
-    bmp.py pyproject.toml {{part}}
+    bmp {{PROJ}}.py {{part}}
+    bmp pyproject.toml {{part}}

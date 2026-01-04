@@ -6,7 +6,7 @@ if sys.platform == "win32":
     import ctypes
     from ctypes.wintypes import MAX_PATH
 
-VERSION = "0.1.4"
+VERSION = "0.1.5"
 
 
 def print_version_info():
