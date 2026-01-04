@@ -34,10 +34,10 @@ attempts to guess the correct path.
 ```bash
     mydocuments [-f | -w | -h | -v]
 
-      --help, -h    Show this help message and exit.
+      --help,    -h    Show this help message and exit.
       --version, -v Show version information and exit.
-      --fuzzy, -f   Use a fuzzy multiplatform method.
-      --winapi, -w  Use Windows API method.
+      --fuzzy,   -f   Use a fuzzy multiplatform method.
+      --winapi,  -w  Use Windows API method.
 ```
 
 By default, if run on Windows the tool will use the more accurate `-w` method.
@@ -47,7 +47,7 @@ On other platforms it will default to the fuzzy finder, for obvious reasons.
 
 ### Any Platform
 
-You can install using `uv` (see [uv.rs](https://uv.rs)).
+You can install using `uv` (see [uv](https://github.com/astral-sh/uv)):
 
     uv tool install mydocuments
 
